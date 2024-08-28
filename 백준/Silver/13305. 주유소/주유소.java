@@ -24,10 +24,10 @@ public class Main {
 			prices[i]=Integer.parseInt(st2.nextToken());
 		}
 
-		int nowPrice = prices[0];
-		int meter = meters[0];
+		long nowPrice = prices[0];
+		long meter = meters[0];
 
-		int result = 0;
+		long result = 0;
 		for (int i = 1; i < n-1; i++) {
 			if (prices[i]<nowPrice) {
 				result += meter*nowPrice;
